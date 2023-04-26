@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*Tem q ter no seu codigo css*/
+}
+body {
+    background-color: #000000;
+}
+.all{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+}
+.coluna{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 6vw 5.26vw 0vw 5.26vw;
+}
+h1{ 
+    color: #ffffff;
+    line-height: 85%;
+    margin-bottom: 5%;
+}
+.strongh1{
+    color:#1e90ff;
+} 
+p{  
+    color: #FFFFFF;
+    margin-bottom:3vw;
+}
+.divboton{
+    display: flex;
+    flex-direction: row;
+}
+.bI {
+    font-family: arial #000000;
+    background-color: #1e90ff;
+    border-radius:15px;
+    padding: 1vw 5vw 1vw 5vw;
+    margin: 0vw 3vw 0vw 0vw;
+    text-decoration: none;
+}
+.cortxtbI{
+    color:#000000;
+}
+.bII {
+    font-family: arial #000000;
+    background-color: #1e90ff;
+    border-radius:15px;
+    padding: 1vw 5vw 1vw 5vw;
+    text-decoration: none;
+}
+.cortxtbII{
+    color:#000000;
+}
+.bI:active{
+    transform: scale(0.96);
+    /*Animação do botão*/
+}
+.bII:active{
+    transform: scale(0.96);
+    /*Animação do botão*/
+}
+.bI:hover{
+    background-color: #0653c5;
+    /*cor ao passar o curso por cima do botão*/
+}
+.bII:hover{
+    background-color: #0653c5;
+    /*cor ao passar o curso por cima do botão*/
+}
+.imagemtst{
+    width: 100%;
+}
+.image{
+    width: 100vw;
+}
+@media screen and (max-width: 760px) {
+    .all{
+    justify-content: space-evenly;
+    font-size: 3.3vw;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+.divboton{
+    justify-content: space-evenly;
+}
+.imagemtst{
+    width: 90%;
+    margin: 5vw 0vw 0vw 5vw;
+}
+.image{
+    margin: 0;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+}
